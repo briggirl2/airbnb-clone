@@ -184,3 +184,6 @@ About
 
 # Virtualenv
 venv
+
+# vscode 
+.vscode
