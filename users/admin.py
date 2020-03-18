@@ -24,4 +24,3 @@ class CustomUserAdmin(admin.ModelAdmin):
             },
         ),
     )
-
