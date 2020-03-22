@@ -57,7 +57,7 @@ class Photo(core_models.TimeStampedModel):
     caption = models.CharField(max_length=80)
     file = models.ImageField()
     room = models.ForeignKey(
-        "Room", on_delete=models.CASCADE
+        "Room", related_name="photos", on_delete=models.CASCADE
     )  # Room이 뒤에 아래 정의되어있지만 ""로 인식가능
 
     def __stt__(self):
