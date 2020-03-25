@@ -187,3 +187,6 @@ venv
 
 # vscode 
 .vscode
+
+# media root
+uploads

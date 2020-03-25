@@ -55,12 +55,12 @@ class Photo(core_models.TimeStampedModel):
     """ Photo Model Definition """
 
     caption = models.CharField(max_length=80)
-    file = models.ImageField()
+    file = models.ImageField(upload_to="room_photos")
     room = models.ForeignKey(
         "Room", related_name="photos", on_delete=models.CASCADE
     )  # Room이 뒤에 아래 정의되어있지만 ""로 인식가능
 
-    def __stt__(self):
+    def __str__(self):
         return self.caption
 
 
