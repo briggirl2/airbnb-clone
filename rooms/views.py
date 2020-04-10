@@ -4,7 +4,8 @@ from . import models
 
 
 def all_rooms(request):
-    page = int(request.GET.get("page", 1))
+    page = request.GET.get("page", 1)
+    page = int(page or 1)
     page_size = 10
     limit = page_size * page
     offset = limit - page_size
