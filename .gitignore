@@ -189,4 +189,5 @@ venv
 .vscode
 
 # media root
-uploads
+uploads/
+node_modules/
