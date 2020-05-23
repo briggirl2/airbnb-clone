@@ -20,7 +20,7 @@
             <span class="text-lg">{{user.bio}}</span>
 
             {% if user == user_obj %}
-                <a href="#" class="btn-link">Edit Profile</a>
+                <a href="{% url 'users:update' %}" class="btn-link">Edit Profile</a>
             {% endif %}
             {% if user_obj.rooms.count > 0 %}
                 <h3 class="mb-12 text-2xl text-center">{{user_obj.first_name}}'s Rooms</h3>
